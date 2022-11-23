@@ -54,7 +54,7 @@ namespace ACME_Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SystemUserId,UserName,UserPassword,EmailAddress,CellPhoneNumber,DateCreated,RoleId")] SystemUser systemUser)
+        public async Task<IActionResult> Create([Bind("UserName,UserPassword,EmailAddress,CellPhoneNumber,DateCreated,RoleId")] SystemUser systemUser)
         {
             if (ModelState.IsValid)
             {
